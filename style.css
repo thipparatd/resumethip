@@ -34,12 +34,16 @@ nav span {
     color: #934DFF;
 }
 
+nav ul {
+    float: right;
+}
+
 nav ul li {
     list-style: none;
     color: white;
-    float: right;
+    display: inline;
     line-height: 80px;
-    margin-right: 3%;
+    padding-right: 50px;
 }
 
 nav a {
