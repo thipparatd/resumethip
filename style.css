@@ -265,3 +265,51 @@ nav.sticky {
     font-size: 100px;
     color: #9067C6;
 }
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+
+    nav {
+        background: black;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: -100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 1rem;
+        font-size: 2rem;
+        left: 2rem;
+        z-index: 3;
+    }
+
+    #check:checked ~ nav {
+        left: 0;
+    }
+
+}
